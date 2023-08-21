@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './Item.module.scss'
 import { Prato } from 'types/Prato'
 import Tags from 'components/Tags'
@@ -26,4 +26,4 @@ const Item = (props: Prato) => {
   )
 }
 
-export default Item
+export default memo(Item)

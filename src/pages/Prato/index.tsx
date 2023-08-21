@@ -3,7 +3,7 @@ import styles from './Prato.module.scss'
 import { useNavigate, useParams } from 'react-router-dom'
 import cardapio from 'data/cardapio.json'
 import Tags from 'components/Tags'
-import { NotFound } from 'pages/NotFound'
+import NotFound  from 'pages/NotFound'
 import Header from 'components/Header'
 
 const Prato = () => {
@@ -14,8 +14,6 @@ const Prato = () => {
     if (!prato) {
         return <NotFound />;
     }
-
-    console.log(prato)
 
     return (
     <>

@@ -1,6 +1,6 @@
 import styles from './Ordenador.module.scss'
 import opcoes from './opcoes.json'
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import classNames from 'classnames'
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
 
@@ -41,4 +41,4 @@ const Ordenador = ({ordenador, setOrdenador}: Props) => {
   )
 }
 
-export default Ordenador
+export default memo(Ordenador)

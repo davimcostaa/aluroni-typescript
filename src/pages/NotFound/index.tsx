@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import tema from 'styles/Tema.module.scss'
 import { useNavigate } from 'react-router-dom'
 
-export const NotFound = () => {
+const NotFound = () => {
     const navigate = useNavigate();
 
   return (
@@ -23,3 +23,4 @@ export const NotFound = () => {
   )
 }
 
+export default NotFound

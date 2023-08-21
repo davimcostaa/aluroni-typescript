@@ -2,7 +2,7 @@ import cardapio from 'data/cardapio.json'
 import styles from './Inicio.module.scss'
 import tema from 'styles/Tema.module.scss'
 import nossaCasa from 'assets/nossa_casa.png'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Prato } from 'types/Prato'
 
 const Inicio = () => {

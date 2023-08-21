@@ -1,6 +1,4 @@
 import Header from 'components/Header'
-import Menu from 'components/Menu'
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import tema from 'styles/Tema.module.scss'
 
