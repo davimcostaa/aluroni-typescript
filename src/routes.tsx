@@ -14,8 +14,8 @@ const AppRouter = () => {
   return (
     <main className="container">
       <Router>
-        <Suspense fallback={<p>Carregando</p>}>
           <Menu />
+          <Suspense fallback={<p>Carregando</p>}>
           <Routes>
             <Route path="/" element={<PaginaPadrao />}>
               <Route index element={<Inicio />} />
@@ -25,8 +25,8 @@ const AppRouter = () => {
             <Route path="/prato/:id" element={<Prato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
           <Footer />
-        </Suspense>
       </Router>
     </main>
   );

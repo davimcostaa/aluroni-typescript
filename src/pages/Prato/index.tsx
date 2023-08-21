@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import styles from './Prato.module.scss'
 import { useNavigate, useParams } from 'react-router-dom'
 import cardapio from 'data/cardapio.json'
-import Tags from 'components/Tags'
-import NotFound  from 'pages/NotFound'
 import Header from 'components/Header'
+
+const Tags = lazy(() => import('components/Tags'))
+const NotFound = lazy(() => import('pages/NotFound'))
 
 const Prato = () => {
     const { id } = useParams()
